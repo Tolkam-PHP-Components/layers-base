@@ -1,0 +1,30 @@
+{
+    "name": "tolkam/base",
+    "description": "Layered architecture base. Interfaces, abstract classes, etc.",
+    "type": "library",
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Tolkam\\Base\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-exif": "*",
+        "psr/container": "^1.0",
+        "psr/event-dispatcher": "^1.0",
+        "tolkam/utils": "^1.0@dev",
+        "tolkam/rules": "^1.0@dev",
+        "tolkam/pagination": "^1.0@dev",
+        "tolkam/collection": "^1.0@dev"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Exception;
+namespace Tolkam\Base\Common\Exception;
 
 use Exception;
 use InvalidArgumentException;
@@ -100,7 +100,7 @@ class DetailedErrorException extends Exception
         string $code,
         string $text = null,
         array $params = []
-    ) {
+    ): self {
         $code = 'named' . '.' . $name . '.' . $code;
         $this->extraMessages[$name] = compact('code', 'text', 'params');
         

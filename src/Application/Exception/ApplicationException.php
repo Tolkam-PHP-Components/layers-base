@@ -2,8 +2,8 @@
 
 namespace Tolkam\Base\Application\Exception;
 
-use Exception;
+use Tolkam\Base\Common\Exception\DetailedErrorException;
 
-class ApplicationException extends Exception
+class ApplicationException extends DetailedErrorException
 {
 }

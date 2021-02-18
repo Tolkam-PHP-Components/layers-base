@@ -7,7 +7,7 @@ use Tolkam\Base\Domain\Value\EqualityTrait;
 use Tolkam\Base\Domain\Value\JsonableTrait;
 use Tolkam\Base\Domain\Value\ValueInterface;
 
-class ArrayValue implements ValueInterface
+class ArrayValue implements ValueInterface, IteratorAggregate, ArrayAccess
 {
     use EqualityTrait, JsonableTrait;
     

@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Store;
+namespace Tolkam\Layers\Base\Domain\Store;
 
-use Tolkam\Base\Domain\Collection\SnapshotCollection;
-use Tolkam\Base\Domain\Repository\Filters;
-use Tolkam\Base\Domain\Repository\Pagination;
+use Tolkam\Layers\Base\Domain\Collection\SnapshotCollection;
+use Tolkam\Layers\Base\Domain\Repository\Filters;
+use Tolkam\Layers\Base\Domain\Repository\Pagination;
 
 interface SnapshotStoreInterface
 {

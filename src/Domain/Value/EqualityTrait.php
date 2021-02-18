@@ -1,6 +1,6 @@
 <?php
 
-namespace Tolkam\Base\Domain\Value;
+namespace Tolkam\Layers\Base\Domain\Value;
 
 trait EqualityTrait
 {

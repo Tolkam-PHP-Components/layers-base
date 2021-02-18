@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Infrastructure\Store;
+namespace Tolkam\Layers\Base\Infrastructure\Store;
 
 use InvalidArgumentException;
 

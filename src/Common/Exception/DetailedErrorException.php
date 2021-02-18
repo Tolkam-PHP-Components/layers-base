@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Common\Exception;
+namespace Tolkam\Layers\Base\Common\Exception;
 
 use Exception;
 use InvalidArgumentException;

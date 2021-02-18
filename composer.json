@@ -1,5 +1,5 @@
 {
-    "name": "tolkam/base",
+    "name": "tolkam/layers-base",
     "description": "Layered architecture base. Interfaces, abstract classes, etc.",
     "type": "library",
     "license": "proprietary",
@@ -7,7 +7,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Tolkam\\Base\\": "src"
+            "Tolkam\\Layers\\Base\\": "src"
         }
     },
     "require": {

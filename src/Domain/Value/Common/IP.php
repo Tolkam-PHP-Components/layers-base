@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Value\Common;
+namespace Tolkam\Layers\Base\Domain\Value\Common;
 
-use Tolkam\Base\Domain\Rule\IP as IPRule;
-use Tolkam\Base\Domain\Value\RulesTrait;
+use Tolkam\Layers\Base\Domain\Rule\IP as IPRule;
+use Tolkam\Layers\Base\Domain\Value\RulesTrait;
 
 class IP extends StringValue
 {

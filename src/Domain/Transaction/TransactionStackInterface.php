@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Transaction;
+namespace Tolkam\Layers\Base\Domain\Transaction;
 
 interface TransactionStackInterface
 {

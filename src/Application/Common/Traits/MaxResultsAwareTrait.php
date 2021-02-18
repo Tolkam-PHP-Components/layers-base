@@ -1,6 +1,6 @@
 <?php
 
-namespace Tolkam\Base\Application\Common\Traits;
+namespace Tolkam\Layers\Base\Application\Common\Traits;
 
 trait MaxResultsAwareTrait
 {

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Application\Presentation;
+namespace Tolkam\Layers\Base\Application\Presentation;
 
-use Tolkam\Base\Domain\Collection\EntityCollection;
-use Tolkam\Base\Domain\Entity\EntityInterface;
+use Tolkam\Layers\Base\Domain\Collection\EntityCollection;
+use Tolkam\Layers\Base\Domain\Entity\EntityInterface;
 
 interface PresentationRendererInterface
 {

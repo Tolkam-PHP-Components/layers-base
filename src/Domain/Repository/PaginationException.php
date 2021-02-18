@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Repository;
+namespace Tolkam\Layers\Base\Domain\Repository;
 
-use Tolkam\Base\Domain\Exception\DomainException;
+use Tolkam\Layers\Base\Domain\Exception\DomainException;
 
 class PaginationException extends DomainException
 {

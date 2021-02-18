@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Repository\Filter;
+namespace Tolkam\Layers\Base\Domain\Repository\Filter;
 
-use Tolkam\Base\Domain\Repository\Filter;
+use Tolkam\Layers\Base\Domain\Repository\Filter;
 
 abstract class BooleanFilter extends Filter
 {

@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Value\Common;
+namespace Tolkam\Layers\Base\Domain\Value\Common;
 
-use Tolkam\Base\Domain\Rule;
-use Tolkam\Base\Domain\Value\EqualityTrait;
-use Tolkam\Base\Domain\Value\RulesTrait;
-use Tolkam\Base\Domain\Value\ValueInterface;
+use Tolkam\Layers\Base\Domain\Rule;
+use Tolkam\Layers\Base\Domain\Value\EqualityTrait;
+use Tolkam\Layers\Base\Domain\Value\RulesTrait;
+use Tolkam\Layers\Base\Domain\Value\ValueInterface;
 
 class Name implements ValueInterface
 {

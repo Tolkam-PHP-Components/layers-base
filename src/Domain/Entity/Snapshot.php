@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Entity;
+namespace Tolkam\Layers\Base\Domain\Entity;
 
 use ArrayIterator;
 use IteratorAggregate;
 use ReflectionClass;
 use ReflectionNamedType;
-use Tolkam\Base\Domain\Value\ValueInterface;
+use Tolkam\Layers\Base\Domain\Value\ValueInterface;
 
 /**
  * Base snapshot class with helper methods
@@ -15,7 +15,7 @@ use Tolkam\Base\Domain\Value\ValueInterface;
  * Ignores untyped properties or properties that are not values or sub-snapshots from import/export
  * Automatically creates values and sub-snapshots from supplied data based on property type-hints
  *
- * @package Tolkam\Base\Domain
+ * @package Tolkam\Layers\Base\Domain
  */
 abstract class Snapshot implements SnapshotInterface, IteratorAggregate
 {

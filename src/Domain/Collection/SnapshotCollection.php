@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Collection;
+namespace Tolkam\Layers\Base\Domain\Collection;
 
 abstract class SnapshotCollection extends Collection
 {

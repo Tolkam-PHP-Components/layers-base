@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Collection;
+namespace Tolkam\Layers\Base\Domain\Collection;
 
-use Tolkam\Base\Domain\Entity\IdentifiableEntityInterface;
-use Tolkam\Base\Domain\Entity\SnapshotInterface;
+use Tolkam\Layers\Base\Domain\Entity\IdentifiableEntityInterface;
+use Tolkam\Layers\Base\Domain\Entity\SnapshotInterface;
 
 abstract class EntityCollection extends Collection
 {

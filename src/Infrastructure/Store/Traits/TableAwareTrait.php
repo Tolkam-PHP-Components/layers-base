@@ -1,6 +1,6 @@
 <?php
 
-namespace Tolkam\Base\Infrastructure\Store\Traits;
+namespace Tolkam\Layers\Base\Infrastructure\Store\Traits;
 
 use InvalidArgumentException;
 

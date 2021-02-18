@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Entity;
+namespace Tolkam\Layers\Base\Domain\Entity;
 
 use ReflectionClass;
 use ReflectionNamedType;
-use Tolkam\Base\Domain\Event\EventsAwareInterface;
-use Tolkam\Base\Domain\Event\EventsAwareTrait;
+use Tolkam\Layers\Base\Domain\Event\EventsAwareInterface;
+use Tolkam\Layers\Base\Domain\Event\EventsAwareTrait;
 
 abstract class Entity implements EntityInterface, EventsAwareInterface
 {

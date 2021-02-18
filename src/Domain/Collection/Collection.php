@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Collection;
+namespace Tolkam\Layers\Base\Domain\Collection;
 
-use Tolkam\Base\Domain\Collection\Traits\PaginationAwareTrait;
 use Tolkam\Collection\LazyCollection;
 use Tolkam\Collection\TypedLazyCollectionTrait;
+use Tolkam\Layers\Base\Domain\Collection\Traits\PaginationAwareTrait;
 
 /**
  * Base class for all collections
  *
- * @package Tolkam\Base\Domain\Repository
+ * @package Tolkam\Layers\Base\Domain\Repository
  */
 abstract class Collection extends LazyCollection
 {

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Collection;
+namespace Tolkam\Layers\Base\Domain\Collection;
 
-use Tolkam\Base\Domain\Value\ValueInterface;
+use Tolkam\Layers\Base\Domain\Value\ValueInterface;
 
 abstract class RelationCollection extends Collection
 {

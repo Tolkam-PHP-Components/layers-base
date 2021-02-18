@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Application\Presentation;
+namespace Tolkam\Layers\Base\Application\Presentation;
 
-use Tolkam\Base\Application\Exception\ApplicationException;
-use Tolkam\Base\Domain\Collection\EntityCollection;
-use Tolkam\Base\Domain\Entity\EntityInterface;
-use Tolkam\Base\Domain\Value\ValueInterface;
+use Tolkam\Layers\Base\Application\Exception\ApplicationException;
+use Tolkam\Layers\Base\Domain\Collection\EntityCollection;
+use Tolkam\Layers\Base\Domain\Entity\EntityInterface;
+use Tolkam\Layers\Base\Domain\Value\ValueInterface;
 
 class PresentationRenderer implements PresentationRendererInterface
 {

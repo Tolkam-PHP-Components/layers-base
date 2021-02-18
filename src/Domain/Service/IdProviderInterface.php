@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Service;
+namespace Tolkam\Layers\Base\Domain\Service;
 
 interface IdProviderInterface
 {

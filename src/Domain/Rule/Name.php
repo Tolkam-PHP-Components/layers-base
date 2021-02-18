@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Rule;
+namespace Tolkam\Layers\Base\Domain\Rule;
 
 use Tolkam\Rules\FailureInterface;
 use Tolkam\Rules\Rule;
@@ -15,7 +15,7 @@ class Name extends Rule
      */
     public function apply($value)
     {
-        $sequence = new Rule\Sequence();
+        $sequence = new Rule\Sequence;
         
         // length
         $sequence->add(new Rule\Length([

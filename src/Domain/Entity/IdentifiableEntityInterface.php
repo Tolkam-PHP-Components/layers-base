@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Entity;
+namespace Tolkam\Layers\Base\Domain\Entity;
 
-use Tolkam\Base\Domain\Value\ValueInterface;
+use Tolkam\Layers\Base\Domain\Value\ValueInterface;
 
 interface IdentifiableEntityInterface extends EntityInterface
 {

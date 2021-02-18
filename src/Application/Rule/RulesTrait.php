@@ -1,9 +1,9 @@
 <?php
 
-namespace Tolkam\Base\Application\Rule;
+namespace Tolkam\Layers\Base\Application\Rule;
 
 use InvalidArgumentException;
-use Tolkam\Base\Application\Exception\ApplicationException;
+use Tolkam\Layers\Base\Application\Exception\ApplicationException;
 use Tolkam\Rules\Rule\Arr;
 use Tolkam\Rules\RuleInterface;
 

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Value\Common;
+namespace Tolkam\Layers\Base\Domain\Value\Common;
 
 class Count extends IntegerValue
 {

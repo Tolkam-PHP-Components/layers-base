@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Rule;
+namespace Tolkam\Layers\Base\Domain\Rule;
 
 use Tolkam\Rules\Rule;
 

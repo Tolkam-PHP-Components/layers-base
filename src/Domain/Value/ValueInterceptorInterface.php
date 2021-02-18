@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Value;
+namespace Tolkam\Layers\Base\Domain\Value;
 
-use Tolkam\Base\Domain\Entity\EntityInterface;
+use Tolkam\Layers\Base\Domain\Entity\EntityInterface;
 
 interface ValueInterceptorInterface
 {

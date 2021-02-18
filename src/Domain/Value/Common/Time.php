@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Domain\Value\Common;
+namespace Tolkam\Layers\Base\Domain\Value\Common;
 
 use DateTimeImmutable;
-use Tolkam\Base\Domain\Value\EqualityTrait;
-use Tolkam\Base\Domain\Value\ValueException;
-use Tolkam\Base\Domain\Value\ValueInterface;
+use Tolkam\Layers\Base\Domain\Value\EqualityTrait;
+use Tolkam\Layers\Base\Domain\Value\ValueException;
+use Tolkam\Layers\Base\Domain\Value\ValueInterface;
 
 class Time implements ValueInterface
 {

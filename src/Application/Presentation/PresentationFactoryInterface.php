@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Tolkam\Base\Application\Presentation;
+namespace Tolkam\Layers\Base\Application\Presentation;
 
 interface PresentationFactoryInterface
 {

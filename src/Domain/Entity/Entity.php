@@ -26,7 +26,7 @@ abstract class Entity implements EntityInterface, EventsAwareInterface
         }
         
         throw new EntityException(
-            sprintf('Undefined property: %s::$%s', static::class, $name)
+            sprintf('No getter for %s::$%s is defined', static::class, $name)
         );
     }
     

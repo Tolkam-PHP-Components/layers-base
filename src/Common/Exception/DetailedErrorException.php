@@ -40,7 +40,7 @@ class DetailedErrorException extends Exception
         array $errorParams = [],
         Throwable $previous = null
     ) {
-        $allowed = 'a-zA-Z\.';
+        $allowed = 'a-zA-Z.';
         if (preg_match('~[^' . $allowed . ']~', $errorCode)) {
             throw new InvalidArgumentException(sprintf(
                 'Invalid error code: allowed characters are "%s"',

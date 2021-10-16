@@ -1,10 +1,15 @@
 {
     "name": "tolkam/layers-base",
-    "description": "Layered architecture base. Interfaces, abstract classes, etc.",
+    "description": "PHP application layered architecture base. Interfaces, abstract classes, etc.",
     "type": "library",
     "license": "proprietary",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Kanstantsin Kulesh",
+            "email": "kk@tolkam.com",
+            "homepage": "https://www.tolkam.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Tolkam\\Layers\\Base\\": "src"
@@ -17,14 +22,12 @@
         "ext-exif": "*",
         "psr/container": "^1.0",
         "psr/event-dispatcher": "^1.0",
-        "tolkam/utils": "^1.0@dev",
-        "tolkam/rules": "^1.0@dev",
-        "tolkam/pagination": "^1.0@dev",
-        "tolkam/collection": "^1.0@dev"
+        "tolkam/utils": "^1.0",
+        "tolkam/rules": "^1.0",
+        "tolkam/pagination": "^0.1",
+        "tolkam/collection": "^1.0"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
+    "suggest": {
+        "tolkam/layers-base-doctrine": "Doctrine helpers for tolkam/layers-base"
     }
 }

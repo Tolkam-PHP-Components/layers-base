@@ -7,7 +7,7 @@ interface RelationInterface
     /**
      * @param array $source
      *
-     * @return RelationInterface
+     * @return static
      */
-    public static function fromArray(array $source);
+    public static function fromArray(array $source): static;
 }

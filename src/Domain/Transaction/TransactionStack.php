@@ -38,12 +38,12 @@ class TransactionStack implements TransactionStackInterface
     /**
      * @inheritDoc
      */
-    public function process($initialValue)
+    public function process($initialValue): mixed
     {
         if (!$this->stack->isEmpty()) {
             $value = call_user_func($this->stack->pop(), $this->process($initialValue));
             
-            return isset($value) ? $value : $initialValue;
+            return $value ?? $initialValue;
         }
         
         return $initialValue;

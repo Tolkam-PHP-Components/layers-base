@@ -40,7 +40,7 @@ trait JsonableTrait
         string $value,
         int $options = JSON_OBJECT_AS_ARRAY,
         int $depth = 512
-    ) {
+    ): mixed {
         $decoded = json_decode($value, null, $depth, $options);
         
         if (json_last_error()) {

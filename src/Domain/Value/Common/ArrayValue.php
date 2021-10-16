@@ -54,7 +54,7 @@ class ArrayValue implements ValueInterface, IteratorAggregate, ArrayAccess
      *
      * @return mixed
      */
-    public function get(string $path = null, $def = null, $sep = '.')
+    public function get(string $path = null, $def = null, string $sep = '.'): mixed
     {
         return Arr::get($this->value, $path, $def, $sep);
     }
@@ -78,7 +78,7 @@ class ArrayValue implements ValueInterface, IteratorAggregate, ArrayAccess
     /**
      * @inheritDoc
      */
-    public static function fromString(string $str)
+    public static function fromString(string $str): static
     {
         return new static(self::jsonDecode($str));
     }
@@ -114,7 +114,7 @@ class ArrayValue implements ValueInterface, IteratorAggregate, ArrayAccess
     /**
      * @inheritDoc
      */
-    public function offsetExists($offset)
+    public function offsetExists($offset): bool
     {
         return isset($this->value[$offset]);
     }

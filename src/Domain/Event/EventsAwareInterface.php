@@ -5,7 +5,7 @@ namespace Tolkam\Layers\Base\Domain\Event;
 interface EventsAwareInterface
 {
     /**
-     * Checks if has pending events
+     * Checks if it has pending events
      *
      * @return bool
      */

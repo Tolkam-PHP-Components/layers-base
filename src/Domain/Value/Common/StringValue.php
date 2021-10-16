@@ -25,7 +25,7 @@ class StringValue implements ValueInterface
     /**
      * @inheritDoc
      */
-    public static function fromString(string $str)
+    public static function fromString(string $str): static
     {
         return new static($str);
     }
@@ -53,7 +53,7 @@ class StringValue implements ValueInterface
      *
      * @return static
      */
-    public function transform(callable $transformer)
+    public function transform(callable $transformer): static
     {
         return static::fromString($transformer($this->value));
     }

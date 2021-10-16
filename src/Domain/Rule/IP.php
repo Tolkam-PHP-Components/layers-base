@@ -2,6 +2,7 @@
 
 namespace Tolkam\Layers\Base\Domain\Rule;
 
+use Tolkam\Rules\FailureInterface;
 use Tolkam\Rules\Rule;
 
 class IP extends Rule
@@ -22,7 +23,7 @@ class IP extends Rule
     /**
      * @inheritDoc
      */
-    public function apply($value)
+    public function apply($value): ?FailureInterface
     {
         if (!filter_var($value, FILTER_VALIDATE_IP, $this->flags)) {
             return $this->failure('invalid', 'Invalid IP address');

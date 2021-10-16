@@ -49,17 +49,17 @@ class Pagination
     /**
      * @var string|int|null
      */
-    protected $previousCursor = null;
+    protected string|int|null $previousCursor = null;
     
     /**
      * @var string|int|null
      */
-    protected $currentCursor = null;
+    protected string|int|null $currentCursor = null;
     
     /**
      * @var string|int|null
      */
-    protected $nextCursor = null;
+    protected string|int|null $nextCursor = null;
     
     /**
      * @var bool
@@ -77,7 +77,7 @@ class Pagination
     protected string $primaryOrder = self::ORDER_DESC;
     
     /**
-     * @var string
+     * @var string|null
      */
     protected ?string $backupOrder = null;
     
@@ -153,7 +153,7 @@ class Pagination
     /**
      * @return bool
      */
-    public function isCursorPagination()
+    public function isCursorPagination(): bool
     {
         return $this->strategy === self::STRATEGY_CURSOR;
     }
@@ -161,7 +161,7 @@ class Pagination
     /**
      * @return bool
      */
-    public function isOffsetPagination()
+    public function isOffsetPagination(): bool
     {
         return $this->strategy === self::STRATEGY_OFFSET;
     }
@@ -208,9 +208,7 @@ class Pagination
         }
         
         if ($maxResults < 1) {
-            throw new InvalidArgumentException(sprintf(
-                'Max results value must be positive integer'
-            ));
+            throw new InvalidArgumentException('Max results value must be positive integer');
         }
         
         $this->maxResults = $maxResults;

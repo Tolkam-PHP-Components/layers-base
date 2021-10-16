@@ -17,7 +17,7 @@ class Name implements ValueInterface
     private string $value;
     
     /**
-     * @inheritDoc
+     * @param string $value
      */
     public function __construct(string $value)
     {
@@ -30,7 +30,7 @@ class Name implements ValueInterface
     /**
      * @inheritDoc
      */
-    public static function fromString(string $str)
+    public static function fromString(string $str): static
     {
         return new static($str);
     }

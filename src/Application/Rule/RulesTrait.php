@@ -21,7 +21,7 @@ trait RulesTrait
         foreach ($rules as $rule) {
             if (!$rule instanceof RuleInterface) {
                 throw new InvalidArgumentException(sprintf(
-                    'Each $rules value must be instance of %s, %s given',
+                    'Each $rules value must be an instance of %s, %s given',
                     RuleInterface::class,
                     gettype($rule)
                 ));

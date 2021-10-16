@@ -25,7 +25,7 @@ class Filters implements IteratorAggregate
      *
      * @return static
      */
-    public static function make(Filter ...$filters)
+    public static function make(Filter ...$filters): static
     {
         $instance = new static;
         
@@ -63,7 +63,7 @@ class Filters implements IteratorAggregate
     /**
      * @inheritDoc
      */
-    public function getIterator()
+    public function getIterator(): SplQueue
     {
         return $this->filters;
     }

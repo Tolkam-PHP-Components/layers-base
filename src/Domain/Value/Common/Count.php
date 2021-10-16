@@ -9,7 +9,7 @@ class Count extends IntegerValue
      *
      * @return static
      */
-    public static function create(int $start = 0)
+    public static function create(int $start = 0): static
     {
         return new static($start);
     }
@@ -17,9 +17,9 @@ class Count extends IntegerValue
     /**
      * Increases
      *
-     * @return $this
+     * @return static
      */
-    public function increased()
+    public function increased(): static
     {
         return new static($this->value + 1);
     }
@@ -27,9 +27,9 @@ class Count extends IntegerValue
     /**
      * Decreases
      *
-     * @return $this
+     * @return static
      */
-    public function decreased()
+    public function decreased(): static
     {
         return new static($this->value - 1);
     }
@@ -41,7 +41,7 @@ class Count extends IntegerValue
      *
      * @return bool
      */
-    public function hasReached($limit)
+    public function hasReached($limit): bool
     {
         return $this->value >= (int) $limit;
     }
@@ -49,9 +49,9 @@ class Count extends IntegerValue
     /**
      * Resets
      *
-     * @return $this
+     * @return static
      */
-    public function reset()
+    public function reset(): static
     {
         return new static(0);
     }

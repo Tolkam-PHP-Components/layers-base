@@ -9,9 +9,9 @@ interface SnapshotInterface
      *
      * @param array $arr
      *
-     * @return SnapshotInterface
+     * @return static
      */
-    public static function fromArray(array $arr);
+    public static function fromArray(array $arr): static;
     
     /**
      * Exports to array

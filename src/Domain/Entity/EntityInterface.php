@@ -9,5 +9,5 @@ interface EntityInterface
      *
      * @return SnapshotInterface
      */
-    public function toSnapshot();
+    public function toSnapshot(): SnapshotInterface;
 }

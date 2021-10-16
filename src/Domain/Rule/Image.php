@@ -3,6 +3,7 @@
 namespace Tolkam\Layers\Base\Domain\Rule;
 
 use SplFileInfo;
+use Tolkam\Rules\FailureInterface;
 use Tolkam\Rules\Rule;
 
 class Image extends Rule
@@ -39,7 +40,7 @@ class Image extends Rule
     /**
      * @inheritDoc
      */
-    public function apply($value)
+    public function apply($value): ?FailureInterface
     {
         $failure = null;
         
@@ -61,6 +62,6 @@ class Image extends Rule
             $failure = ['invalid.mimeType', 'Invalid file type', compact('mimeType')];
         }
         
-        return $failure ? $this->failure(...$failure) : $failure;
+        return $failure !== null ? $this->failure(...$failure) : $failure;
     }
 }

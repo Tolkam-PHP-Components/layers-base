@@ -17,7 +17,7 @@ class BooleanValue implements ValueInterface
     /**
      * @param mixed $value
      */
-    public function __construct($value)
+    public function __construct(mixed $value)
     {
         $this->value = (bool) $value;
     }
@@ -25,7 +25,7 @@ class BooleanValue implements ValueInterface
     /**
      * @inheritDoc
      */
-    public static function fromString(string $str)
+    public static function fromString(string $str): static
     {
         return new static($str);
     }

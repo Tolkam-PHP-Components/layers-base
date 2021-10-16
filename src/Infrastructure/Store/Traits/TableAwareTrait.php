@@ -22,9 +22,9 @@ trait TableAwareTrait
      * @param string      $value
      * @param string|null $alias
      *
-     * @return $this
+     * @return static
      */
-    public function setTable(string $value, string $alias = null)
+    public function setTable(string $value, string $alias = null): static
     {
         if (!empty($alias)) {
             $this->tables[$alias] = $value;
@@ -43,7 +43,7 @@ trait TableAwareTrait
      *
      * @return string
      */
-    public function getTable(string $alias = null)
+    public function getTable(string $alias = null): string
     {
         if (!empty($alias)) {
             $table = $this->tables[$alias] ?? null;

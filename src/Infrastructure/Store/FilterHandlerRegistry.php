@@ -67,6 +67,7 @@ class FilterHandlerRegistry
     
     /**
      * @return array|callable[]
+     * @noinspection PhpDocSignatureInspection
      */
     public function getHandlers(): array
     {

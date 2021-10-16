@@ -54,7 +54,7 @@ abstract class Entity implements EntityInterface, EventsAwareInterface
         $r = new ReflectionClass($snapshotClassName);
         $snapshotArr = [];
         foreach ($r->getProperties() as $property) {
-            if (!$typed = $property->getType()) {
+            if (!$property->getType()) {
                 continue;
             }
             
@@ -70,7 +70,8 @@ abstract class Entity implements EntityInterface, EventsAwareInterface
                 continue;
             }
             
-            // snapshot property name is entity name with suffix Id
+            /* @noinspection GrazieInspection */
+            // snapshot property name is entity name with suffix "Id"
             $entityName = rtrim($name, 'Id');
             $entity = $this->{$entityName} ?? null;
             if (property_exists($this, $entityName)) {

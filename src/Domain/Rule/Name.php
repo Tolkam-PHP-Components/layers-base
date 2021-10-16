@@ -13,7 +13,7 @@ class Name extends Rule
     /**
      * @inheritDoc
      */
-    public function apply($value)
+    public function apply($value): mixed
     {
         $sequence = new Rule\Sequence;
         
@@ -37,7 +37,7 @@ class Name extends Rule
      *
      * @return FailureInterface|null
      */
-    protected function checkCharacters($value)
+    protected function checkCharacters($value): ?FailureInterface
     {
         $code = 'invalid.characters';
         $text = 'Name contains illegal characters';

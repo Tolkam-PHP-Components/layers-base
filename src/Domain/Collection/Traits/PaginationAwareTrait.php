@@ -16,9 +16,9 @@ trait PaginationAwareTrait
      *
      * @param PaginationResultInterface $paginationResult
      *
-     * @return self
+     * @return static
      */
-    public function setPaginationResult(PaginationResultInterface $paginationResult)
+    public function setPaginationResult(PaginationResultInterface $paginationResult): static
     {
         $this->paginationResult = $paginationResult;
         

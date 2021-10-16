@@ -9,5 +9,5 @@ interface IdProviderInterface
      *
      * @return mixed
      */
-    public function next();
+    public function next(): mixed;
 }

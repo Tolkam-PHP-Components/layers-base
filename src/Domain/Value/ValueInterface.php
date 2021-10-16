@@ -18,14 +18,14 @@ interface ValueInterface
      *
      * @return mixed
      */
-    public static function fromString(string $str);
+    public static function fromString(string $str): mixed;
     
     /**
      * Gets original value
      *
      * @return mixed
      */
-    public function value();
+    public function value(): mixed;
     
     /**
      * Checks if value equals to other one

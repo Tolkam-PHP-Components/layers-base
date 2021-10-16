@@ -11,5 +11,5 @@ interface TransactionStackInterface
      *
      * @return mixed
      */
-    public function process($initialValue);
+    public function process($initialValue): mixed;
 }

@@ -18,7 +18,7 @@ class Email implements ValueInterface
     private string $value;
     
     /**
-     * @inheritDoc
+     * @param string $value
      */
     public function __construct(string $value)
     {
@@ -30,7 +30,7 @@ class Email implements ValueInterface
     /**
      * @inheritDoc
      */
-    public static function fromString(string $str)
+    public static function fromString(string $str): static
     {
         return new static($str);
     }
@@ -56,7 +56,7 @@ class Email implements ValueInterface
      *
      * @return string
      */
-    public function getMailbox()
+    public function getMailbox(): string
     {
         return mb_substr($this->value, 0, mb_strpos($this->value, '@'));
     }
@@ -66,7 +66,7 @@ class Email implements ValueInterface
      *
      * @return string
      */
-    public function getDomain()
+    public function getDomain(): string
     {
         return mb_substr($this->value, mb_strpos($this->value, '@') + 1);
     }
@@ -76,9 +76,9 @@ class Email implements ValueInterface
      *
      * @param string $maskChar
      *
-     * @return mixed|string
+     * @return string
      */
-    public function getMasked(string $maskChar = '*')
+    public function getMasked(string $maskChar = '*'): string
     {
         $mailbox = Str::mask($this->getMailbox(), 25, 2, $maskChar);
         

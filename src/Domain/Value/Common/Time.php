@@ -17,9 +17,9 @@ class Time implements ValueInterface
     protected DateTimeImmutable $value;
     
     /**
-     * @param string|int $input
+     * @param int|string $input
      */
-    public function __construct($input)
+    public function __construct(int|string $input)
     {
         if ((!is_string($input) && !is_int($input))) {
             throw new ValueException('Input time must be integer or string');
@@ -51,7 +51,7 @@ class Time implements ValueInterface
      *
      * @return Time
      */
-    public static function create()
+    public static function create(): self
     {
         return new self(time());
     }
@@ -71,7 +71,7 @@ class Time implements ValueInterface
      *
      * @return string
      */
-    public function format(string $format)
+    public function format(string $format): string
     {
         return $this->toDateTime()->format($format);
     }
@@ -81,7 +81,7 @@ class Time implements ValueInterface
      *
      * @return string
      */
-    public function toMysqlDatetime()
+    public function toMysqlDatetime(): string
     {
         return $this->format('Y-m-d H:i:s.u');
     }

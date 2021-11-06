@@ -3,12 +3,14 @@
 namespace Tolkam\Layers\Base\Domain\Value\Common;
 
 use DateTimeImmutable;
+use Tolkam\Layers\Base\Domain\Rule\Time as TimeRule;
 use Tolkam\Layers\Base\Domain\Value\EqualityTrait;
-use Tolkam\Layers\Base\Domain\Value\ValueException;
+use Tolkam\Layers\Base\Domain\Value\RulesTrait;
 use Tolkam\Layers\Base\Domain\Value\ValueInterface;
 
 class Time implements ValueInterface
 {
+    use RulesTrait;
     use EqualityTrait;
     
     /**
@@ -21,21 +23,14 @@ class Time implements ValueInterface
      */
     public function __construct(int|string $input)
     {
-        if ((!is_string($input) && !is_int($input))) {
-            throw new ValueException('Input time must be integer or string');
-        }
+        self::applyRule(new TimeRule, $input);
         
-        // if input looks like timestamp, make it parsable
+        // make possible timestamp parseable
         if (filter_var($input, FILTER_VALIDATE_INT) !== false) {
             $input = '@' . $input;
         }
         
-        // try to parse into DateTimeImmutable
-        if (!$this->value = new DateTimeImmutable($input)) {
-            throw new ValueException(sprintf(
-                'Unable to create time from a given input "%s"', $input
-            ));
-        }
+        $this->value = new DateTimeImmutable($input);
     }
     
     /**

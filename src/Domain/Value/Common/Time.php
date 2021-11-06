@@ -41,19 +41,19 @@ class Time implements ValueInterface
     /**
      * @inheritDoc
      */
-    public static function fromString(string $str): self
+    public static function fromString(string $str): static
     {
-        return new self($str);
+        return new static($str);
     }
     
     /**
      * Creates instance with current time
      *
-     * @return Time
+     * @return static
      */
-    public static function create(): self
+    public static function create(): static
     {
-        return new self(time());
+        return new static(time());
     }
     
     /**

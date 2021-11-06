@@ -34,9 +34,9 @@ class ArrayValue implements ValueInterface, IteratorAggregate, ArrayAccess
      * @param string $path
      * @param        $value
      *
-     * @return ArrayValue
+     * @return static
      */
-    public function with(string $path, $value): self
+    public function with(string $path, $value): static
     {
         $arr = $this->value;
         
@@ -72,7 +72,7 @@ class ArrayValue implements ValueInterface, IteratorAggregate, ArrayAccess
      */
     public function __toString(): string
     {
-        return self::jsonEncode($this->value, JSON_FORCE_OBJECT);
+        return static::jsonEncode($this->value, JSON_FORCE_OBJECT);
     }
     
     /**
@@ -80,7 +80,7 @@ class ArrayValue implements ValueInterface, IteratorAggregate, ArrayAccess
      */
     public static function fromString(string $str): static
     {
-        return new static(self::jsonDecode($str));
+        return new static(static::jsonDecode($str));
     }
     
     /**
